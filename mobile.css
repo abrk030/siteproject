@@ -1,0 +1,16 @@
+header{
+  flex-direction: column;
+  align-items: center;
+}
+.smallimage{
+  width: 50px;
+  }
+  .largeimage{
+    width: 100px;
+  }
+  footer #Need h1{
+    text-align: center;
+  }
+  footer #Shopping h1{
+    text-align: center;
+  }

@@ -15,12 +15,12 @@
   margin: auto;
 }
 .smallimage{
-width: 5%;
+width: 50px;
 }
 .largeimage{
-  width: 10%;
+  width: 100px;
 }
-/* ================================================== */
+/* ====================== Core Styling ============================ */
 
 body{
   font-family: 'Montserrat', sans-serif;
@@ -34,16 +34,18 @@ a:hover{
   text-decoration: none;
   color: #666;
 }
-img{
-  /* width: 100%; */
-}
 
 
-/* ====================================================== */
+/* ========================== Header ============================ */
 header{
+  padding: 20px 0px;
   display: flex;
-  font-size: 13px;
+  font-size: 14px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+
+
 #HeaderLogo{
   display: flex;
   justify-content: center;
@@ -52,13 +54,15 @@ header{
 }
 #HeaderLogo img{
   display: block;
-  width: 140px;
+  width: 120px;
 }
+
 
 #HeaderInfo{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 250px;
 }
 #HeaderInfo div{
   display: flex;
@@ -67,11 +71,13 @@ header{
   padding-bottom: 10px;
 }
 
+
 #HeaderLinks{
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 10px 5px;
   font-size: 12px;
+  align-content: space-between;
   align-self: center;
 }
 #HeaderLinks a {
@@ -79,11 +85,11 @@ header{
 }
 #HeaderLinks img{
   width: 12px;
-  /* height: 15px; */
 }
 #HeaderLinks > :nth-child(5) img {
   width: 6px;
 }
+
 
 #Form{
   display: flex;
@@ -116,15 +122,15 @@ header{
   font-size: 16px;
   padding: 5px 10px;
   cursor: pointer;
+  margin-left: -3px;
 }
 
-
-
-
+/* ================= Brands ==================== */
 
 #Brands{
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
 #Brands .imagecontainer{
@@ -134,23 +140,22 @@ padding:16px;
   width: 100%;
 }
 
-
-
-
+/* =================== Cards ======================== */
 
 #Cards{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 13px;
+  flex-wrap: wrap;
 }
 .card{
-  width: 24%;
+  width: 260px;
   border-radius: 10px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
   padding: 10px;
-  row-gap: 10px;
+  margin-bottom: 20px;
   justify-content: center;
   align-items: center;
 }
@@ -175,27 +180,44 @@ padding:16px;
 .card:nth-child(1) a{
   background-color: var(--purple);
 }
+.card:nth-child(1) a:hover{
+  background-color: var(--purple);
+  opacity: 0.9;
+}
 .card:nth-child(2) a{
+  background-color: var(--darkblue);
+}
+.card:nth-child(2) a:hover{
+  opacity: 0.9;
   background-color: var(--darkblue);
 }
 .card:nth-child(3) a{
   background-color: var(--green);
 }
+.card:nth-child(3) a:hover{
+  opacity: 0.9;
+  background-color: var(--green);
+}
 .card:nth-child(4) a{
   background-color: var(--lightblue);
 }
-
+.card:nth-child(4) a:hover{
+  opacity: 0.9;
+  background-color: var(--lightblue);
+}
+/* ==================== Footer ========================= */
 
 footer{
   display: flex;
-  /* margin-top: 100px; */
-  padding: 50px 0 0 0;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
+
+
 #FooterInfo{
   display: flex;
   flex-direction: column;
-   flex: 2;
+   width: 300px;
    padding: 20px;
 }
 #FooterInfo img{
@@ -207,7 +229,7 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  flex: 2;
+  width: 240px;
   padding: 20px;
 }
 #FooterLogos ul{
@@ -216,10 +238,11 @@ footer{
   justify-content: space-between;
   padding: 0px 20px;
 }
+
+
 footer #Need{
- flex: 3;
+ width:400px;
  align-self: center;
- padding: 0px 50px;
  font-size: 12px;
 }
 footer #Need h1{
@@ -236,7 +259,7 @@ footer #Need div a {
   padding-bottom: 5px;
 }
 footer #Shopping{
-  flex: 3;
+  width: 250px;
   align-self: center;
   font-size: 12px;
 }
