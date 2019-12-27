@@ -1,0 +1,4 @@
+#800020 -- purpul
+#008080 -- darkblue
+#88c821 -- green
+#2b9fe0 -- lightblue
