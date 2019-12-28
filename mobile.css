@@ -2,8 +2,19 @@ header{
   flex-direction: column;
   align-items: center;
 }
+#HeaderContent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #HeaderInfo{
+  flex: 2;
   width: auto;
+  grid-row: 2/span 1;
+}
+#HeaderLinks{
+  display: none;
 }
 #HeaderLinks a{
   padding: 0px;
@@ -11,7 +22,22 @@ header{
 #Brands .imagecontainer{
   padding:6px;
   }
-
+#HeaderLinksBurger{
+  flex: 1;
+  display: block;
+  grid-row: 1/span 1;
+  align-self: center;
+  justify-self: center;
+  width: auto;
+}
+#HeaderLinksBurger i{
+  display: block;
+  padding: 15px;
+  margin: 15px;
+}
+#HeaderLinksBurger i:hover{
+  font-size: 20px;
+}
 
   .card{
     width: 360px;}

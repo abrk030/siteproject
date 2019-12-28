@@ -19,7 +19,7 @@
 
 body{
   font-family: 'Montserrat', sans-serif;
-  background-color: #ccc;
+  background-color: #e5e5e5;
 }
 a{
   color: #333;
@@ -34,10 +34,9 @@ a:hover{
 /* ========================== Header ============================ */
 header{
   padding: 20px 0px;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto;
   font-size: 14px;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 
@@ -51,13 +50,16 @@ header{
   display: block;
   width: 120px;
 }
-
+#HeaderContent{
+  display: grid;
+  grid-template-columns: auto auto;
+}
 
 #HeaderInfo{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 250px;
+  max-width: 250px;
 }
 #HeaderInfo div{
   display: flex;
@@ -85,6 +87,9 @@ header{
   width: 6px;
 }
 
+#HeaderLinksBurger{
+  display: none;
+}
 
 #Form{
   display: flex;
@@ -131,6 +136,13 @@ header{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin: 20px auto;
+}
+body > h1{
+  color: var(--lightblue);
+  text-align: center;
+  font-size: 20px;
+  margin: 5px auto;
 }
 #Brands .imagecontainer{
 /* padding:16px; */
@@ -167,12 +179,13 @@ header{
 .card img{
   display: block;
   width: 60%;
+  height:130px;
 }
 .card h1 {
   margin: 20px auto;
 }
 .card p{
-  text-align: justify;
+  text-align: center;
 }
 .card a {
   background-color: #800020;
@@ -213,8 +226,8 @@ header{
 /* ==================== Footer ========================= */
 
 footer{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   justify-content: space-around;
 }
 
@@ -224,6 +237,7 @@ footer{
   flex-direction: column;
    width: 300px;
    padding: 20px;
+   justify-self: center;
 }
 #FooterInfo img{
   width: 140px;
@@ -231,6 +245,7 @@ footer{
 
 
 #FooterLogos{
+  justify-self: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -246,6 +261,7 @@ footer{
 
 
 footer #Need{
+  justify-self: center;
  width:400px;
  align-self: center;
  font-size: 12px;
@@ -264,6 +280,7 @@ footer #Need div a {
   padding-bottom: 5px;
 }
 footer #Shopping{
+  justify-self: center;
   width: 250px;
   align-self: center;
   font-size: 12px;
@@ -279,4 +296,13 @@ footer #Shopping div a {
   border-bottom: 1px solid #333;
   margin: 10px;
   padding-bottom: 5px;
+}
+
+#FooterText{
+  background-color: #d0cdcd;
+}
+#FooterText p{
+  padding: 10px 20px;
+  font-size: 12px;
+  text-align: center;
 }
