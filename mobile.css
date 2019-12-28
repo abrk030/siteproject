@@ -2,15 +2,30 @@ header{
   flex-direction: column;
   align-items: center;
 }
-.smallimage{
-  width: 50px;
+#HeaderInfo{
+  width: auto;
+}
+#HeaderLinks a{
+  padding: 0px;
+}
+#Brands .imagecontainer{
+  padding:6px;
   }
-  .largeimage{
-    width: 100px;
-  }
+
+
+  .card{
+    width: 360px;}
+
+
   footer #Need h1{
     text-align: center;
   }
   footer #Shopping h1{
     text-align: center;
+  }
+  footer #Shopping{
+    width: auto;
+  }
+  footer #Shopping div{
+    grid-template-columns: auto auto auto;
   }

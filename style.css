@@ -14,12 +14,7 @@
   max-width: 1200px;
   margin: auto;
 }
-.smallimage{
-width: 50px;
-}
-.largeimage{
-  width: 100px;
-}
+
 /* ====================== Core Styling ============================ */
 
 body{
@@ -124,6 +119,10 @@ header{
   cursor: pointer;
   margin-left: -3px;
 }
+#Form form > :nth-child(2) img{
+  width: 14px;
+  height: 14px;
+}
 
 /* ================= Brands ==================== */
 
@@ -134,11 +133,17 @@ header{
   align-items: center;
 }
 #Brands .imagecontainer{
-padding:16px;
+/* padding:16px; */
 }
-#Brands .imagecontainer img{
+#Brands img{
   width: 100%;
 }
+#Brands .smallimage{
+  width: 30px;
+  }
+#Brands .largeimage{
+    width: 60px;
+  }
 
 /* =================== Cards ======================== */
 
