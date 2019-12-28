@@ -16,15 +16,9 @@ header{
 #HeaderLinks{
   display: none;
 }
-#HeaderLinks a{
-  padding: 0px;
-}
-#Brands .imagecontainer{
-  padding:6px;
-  }
 #HeaderLinksBurger{
   flex: 1;
-  display: block;
+  display: inline-block;
   grid-row: 1/span 1;
   align-self: center;
   justify-self: center;
@@ -38,11 +32,22 @@ header{
 #HeaderLinksBurger i:hover{
   font-size: 20px;
 }
+#Brands .imagecontainer{
+  padding:6px;
+}
+
 
   .card{
-    width: 360px;}
-
-
+    width: 360px;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer > * {
+    width: auto;
+  }
   footer #Need h1{
     text-align: center;
   }
