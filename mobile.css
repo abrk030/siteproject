@@ -38,7 +38,9 @@ header{
 #Brands .imagecontainer{
   padding:6px;
 }
-
+#Form form > :nth-child(1){
+  width: 140px;
+}
 
   .card{
     width: 360px;
