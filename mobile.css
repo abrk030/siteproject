@@ -2,6 +2,9 @@ header{
   flex-direction: column;
   align-items: center;
 }
+#HeaderLogo img{
+  width: 90px;
+}
 #HeaderContent{
   display: flex;
   justify-content: center;
